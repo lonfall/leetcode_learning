@@ -17,7 +17,7 @@ public class Question6 {
         for (int i = 0; i < numRows; i++) {
             // 是否是头一行或最后一行
             if (i == 0 || i == numRows - 1) {
-                // 遍历该行（头尾共用一个元素，可以看作只有下移没有上移,或者只有上移没有下移,移动距离皆（numRows - 1） * 2）
+                // 遍历该行（头尾共用一个元素，可以看作只有下移没有上移,或者只有上移没有下移,移动距离皆为（numRows - 1） * 2）
                 int index = i;
                 while (index < str.length) {
                     buffer.append(str[index]);

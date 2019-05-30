@@ -1,5 +1,6 @@
 package com.lh.learning.leetcode.no7;
 
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -18,8 +19,6 @@ public class Question7Test {
 
     @Test
     public void test() {
-//        System.out.println(question7.reverse(-123456) + "");
-//        System.out.println(question7.reverse(2147483647) + "");
-        System.out.println(question7.reverse(-2147483648) + "");
+        Assert.assertEquals(question7.reverse(-2147483648), 0);
     }
 }

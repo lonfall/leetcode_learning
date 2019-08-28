@@ -19,11 +19,11 @@ public class Question9Test {
 
     @Test
     public void test() {
-//        Assert.assertFalse(question9.isPalindrome(123456));
-//        Assert.assertTrue(question9.isPalindrome(12321));
-//        Assert.assertFalse(question9.isPalindrome(-12321));
-//        Assert.assertFalse(question9.isPalindrome(10));
-//        Assert.assertTrue(question9.isPalindrome(121));
+        Assert.assertFalse(question9.isPalindrome(123456));
+        Assert.assertTrue(question9.isPalindrome(12321));
+        Assert.assertFalse(question9.isPalindrome(-12321));
+        Assert.assertFalse(question9.isPalindrome(10));
+        Assert.assertTrue(question9.isPalindrome(121));
         Assert.assertTrue(question9.isPalindrome(1410110141));
     }
 }

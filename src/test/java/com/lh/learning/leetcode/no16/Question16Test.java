@@ -1,5 +1,6 @@
 package com.lh.learning.leetcode.no16;
 
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -19,6 +20,6 @@ public class Question16Test {
 
     @Test
     public void test() {
-        System.out.println(question16.threeSumClosest(new int[]{-1, 2, 1, -4}, 1));
+        Assert.assertEquals(question16.threeSumClosest(new int[]{-1, 2, 1, -4}, 1), 2);
     }
 }

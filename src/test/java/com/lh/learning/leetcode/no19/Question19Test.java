@@ -20,19 +20,9 @@ public class Question19Test {
 
     @Test
     public void test() {
-        ListNode head = null;
-        ListNode prev = null;
-        for (int i = 0; i < 5; i++) {
-            ListNode node = new ListNode(i + 1);
-            if (prev != null) {
-                prev.next = node;
-            } else {
-                head = node;
-            }
-            prev = node;
-        }
+        ListNode head = ListNode.init(5);
         ListNode result = question19.removeNthFromEnd(head, 2);
         System.out.println(result);
-        Assert.assertEquals(result.toString(), "1-->2-->3-->5");
+        Assert.assertEquals(result.toString(), "1->2->3->5");
     }
 }

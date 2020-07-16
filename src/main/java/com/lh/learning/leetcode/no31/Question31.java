@@ -14,27 +14,30 @@ public class Question31 {
         boolean find = false;
         for (int i = nums.length - 2; i >= 0; i--) {
             if (nums[i] < prev) {
-                int min = nums[i];
-                int t = nums[i];
-                for (int j = i + 1; j < nums.length; j++) {
-                    if (j + 1 >= nums.length || nums[j + 1] < min) {
+                boolean index_find = false;
+                for (int j = i; j < nums.length; j++) {
+                    if (!index_find && (j + 1 == nums.length || nums[j + 1] <= nums[i])) {
+                        int t = nums[i];
                         nums[i] = nums[j];
                         nums[j] = t;
-                        break;
+                        index_find = true;
                     }
-                    int temp = nums[j];
-                    nums[j] = t;
-                    t = temp;
+                    if (j + 1 == nums.length) {
+                        reversal(nums, i + 1, nums.length - 1);
+                    }
                 }
                 find = true;
                 break;
             }
             prev = nums[i];
         }
-        if (find) {
-            return;
+        if (!find) {
+            reversal(nums, 0, nums.length - 1);
         }
-        for (int i = 0, j = nums.length - 1; i < nums.length / 2; i++, j--) {
+    }
+
+    public void reversal(int[] nums, int start, int end) {
+        for (int i = start, j = end; i < j; i++, j--) {
             int t = nums[i];
             nums[i] = nums[j];
             nums[j] = t;

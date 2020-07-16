@@ -35,5 +35,14 @@ public class Question31Test {
         int[] array4 = new int[]{1, 3, 2};
         question31.nextPermutation(array4);
         System.out.println(JSON.toJSON(array4));
+
+        int[] array5 = new int[]{2, 3, 1};
+        question31.nextPermutation(array5);
+        System.out.println(JSON.toJSON(array5));
+
+        //[4,1,2,3,5]
+        int[] array6 = new int[]{3, 5, 4, 2, 1};
+        question31.nextPermutation(array6);
+        System.out.println(JSON.toJSON(array6));
     }
 }

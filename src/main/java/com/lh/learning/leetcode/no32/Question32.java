@@ -1,9 +1,12 @@
 package com.lh.learning.leetcode.no32;
 
 /**
+ * 时间复杂度 n*log n
+ * 空间复杂度 n
+ *
  * @auther: loneyfall
  * @date: 2020/7/17
- * @description:
+ * @description: 最长有效括号
  */
 public class Question32 {
     public int longestValidParentheses(String s) {

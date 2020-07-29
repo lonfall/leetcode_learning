@@ -21,10 +21,10 @@ public class Question34 {
                 m = mind + 1;
             }
         }
-        if (find == -1) {
-            return new int[]{-1, -1};
-        }
         int[] result = new int[]{find, find};
+        if (find == -1) {
+            return result;
+        }
         while (m < result[0]) {
             int mind = m + (result[0] - m) / 2;
             if (nums[mind] == target) {

@@ -5,9 +5,7 @@ import java.util.List;
 
 /**
  * 初始化：0
- * 冲突：-1
  * 选择：1
- * 已选择：2
  *
  * @auther: loneyfall
  * @date: 2021/2/25

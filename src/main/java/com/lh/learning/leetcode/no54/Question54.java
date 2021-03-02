@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 循环顺序：右-》下-》左-》上
+ *
  * @auther: loneyfall
  * @date: 2021/3/2
  * @description:

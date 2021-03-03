@@ -3,7 +3,7 @@ package com.lh.learning.leetcode.no55;
 /**
  * @auther: loneyfall
  * @date: 2021/3/3
- * @description:
+ * @description: 跳跃游戏
  */
 public class Question55 {
     public boolean canJump(int[] nums) {

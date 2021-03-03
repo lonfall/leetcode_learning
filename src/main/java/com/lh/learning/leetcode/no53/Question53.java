@@ -3,7 +3,7 @@ package com.lh.learning.leetcode.no53;
 /**
  * @auther: loneyfall
  * @date: 2021/2/27
- * @description:
+ * @description: 最大子序和
  */
 public class Question53 {
     public int maxSubArray(int[] nums) {

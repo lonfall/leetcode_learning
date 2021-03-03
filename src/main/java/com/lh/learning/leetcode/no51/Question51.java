@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @auther: loneyfall
  * @date: 2021/2/25
- * @description:
+ * @description: N 皇后
  */
 public class Question51 {
     public List<List<String>> solveNQueens(int n) {

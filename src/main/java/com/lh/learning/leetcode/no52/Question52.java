@@ -6,7 +6,7 @@ package com.lh.learning.leetcode.no52;
  *
  * @auther: loneyfall
  * @date: 2021/2/27
- * @description:
+ * @description: N皇后 II
  */
 public class Question52 {
     public int totalNQueens(int n) {

@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @auther: loneyfall
  * @date: 2021/3/4
- * @description:
+ * @description: 插入区间
  */
 public class Question57 {
     public int[][] insert(int[][] intervals, int[] newInterval) {

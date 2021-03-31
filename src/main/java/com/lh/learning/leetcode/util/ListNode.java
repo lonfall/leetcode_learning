@@ -29,7 +29,7 @@ public class ListNode {
     public static ListNode init(int n) {
         ListNode head = null;
         ListNode prev = null;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < n; i++) {
             ListNode node = new ListNode(i + 1);
             if (prev != null) {
                 prev.next = node;
